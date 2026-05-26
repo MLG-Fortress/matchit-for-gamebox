@@ -4,6 +4,8 @@ import me.nikl.gamebox.GameBox;
 import me.nikl.gamebox.GameBoxSettings;
 import me.nikl.gamebox.game.Game;
 import me.nikl.gamebox.game.GameSettings;
+import me.nikl.gamebox.nms.NmsFactory;
+import me.nikl.gamebox.nms.NmsUtility;
 import me.nikl.gamebox.utility.ItemStackUtility;
 import me.nikl.gamebox.utility.StringUtility;
 import org.bukkit.configuration.ConfigurationSection;
@@ -24,6 +26,7 @@ import java.util.List;
 public class MatchIt extends Game {
     private List<ItemStack> pairItems;
     private ItemStack cover, border;
+    private NmsUtility nms = NmsFactory.getNmsUtility();
 
     public MatchIt(GameBox gameBox) {
         super(gameBox, MatchitModule.MATCHIT);
