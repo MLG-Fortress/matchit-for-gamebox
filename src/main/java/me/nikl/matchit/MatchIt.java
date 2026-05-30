@@ -103,7 +103,7 @@ public class MatchIt extends Game {
         if (cover == null) {
             warn(" missing or invalid cover item in %config%");
             warn("    falling back to default...");
-            cover = ItemStackUtility.getItemStack("STAINED_GLASS_PANE:3");
+            cover = ItemStackUtility.getItemStack("LIGHT_BLUE_STAINED_GLASS_PANE");
             ItemMeta meta = cover.getItemMeta();
             meta.setDisplayName(StringUtility.color("&1Click to uncover"));
             cover.setItemMeta(meta);
@@ -114,7 +114,7 @@ public class MatchIt extends Game {
         if (border == null) {
             warn(" missing or invalid border item in %config%");
             warn("    falling back to default...");
-            border = ItemStackUtility.getItemStack("STAINED_GLASS_PANE:15");
+            border = ItemStackUtility.getItemStack("BLACK_STAINED_GLASS_PANE");
             ItemMeta meta = border.getItemMeta();
             meta.setDisplayName("&r");
             border.setItemMeta(meta);
